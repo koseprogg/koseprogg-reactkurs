@@ -39,14 +39,14 @@ const PostInput = (props) => {
       <textarea
         placeholder="Tittel"
         rows={1}
-        cols={70}
+        cols={50}
         value={title}
         onChange={handleTitleChange}
       />
       <textarea
         placeholder="Tekst"
         rows={8}
-        cols={70}
+        cols={50}
         value={text}
         onChange={handleTextChange}
       />

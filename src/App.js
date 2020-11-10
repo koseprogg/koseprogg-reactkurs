@@ -7,6 +7,12 @@ import "./styles.css";
 export default function App() {
   const [posts, setPosts] = React.useState([]);
 
+  React.useEffect(() => {
+    if (posts.length > 0) {
+      alert("En ny post har blitt lagt til.");
+    }
+  }, [posts]);
+
   const placeholderComponent = (
     <div className="placeholderComponent">
       <p>Finner ingen innlegg.</p>
@@ -20,7 +26,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header title={"Abablogg"} />
       <div className="posts">
         {posts.length === 0
           ? placeholderComponent
