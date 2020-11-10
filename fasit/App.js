@@ -20,7 +20,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header title={"Abablogg"} />
       <div className="posts">
         {posts.length === 0
           ? placeholderComponent
